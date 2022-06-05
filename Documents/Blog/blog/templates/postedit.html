@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 2px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+.title{
+    width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.body{
+    width: 100%;
+    margin:8px 0;
+  height: 400px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.submit{
+    padding:10px 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><a style="text-decoration: none; color: black;" href="/">Test Blog</a></h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <form method="POST" action="postedit">
+            {% csrf_token %}
+            <input name="title" class="title" type="text" placeholder="Post Title"><br>
+
+            <textarea name="body" class="body" type="text" placeholder="Input text here..."></textarea>
+            <!--<textarea name="test" class="body" type="text" placeholder="Input text here..."></textarea>-->
+            
+            <input class="submit"type="submit" value="Post"/>
+        
+        </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
