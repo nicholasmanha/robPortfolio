@@ -5,9 +5,20 @@
 * ==========================================
 *
 */
-/*.titlecontainer{
-    padding-left:5vw;
-}*/
+.desc{
+    display:inline;
+}
+.titlecontainer{
+    top:50%;
+}
+.big{
+    padding-right:10px;
+    width:50%;
+    float:left;
+}
+.header3{
+    color: #555; 
+}
 .header2{
     color: #555; 
 }
