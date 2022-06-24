@@ -107,9 +107,7 @@ iframe {
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
+    
     .robbody{
         width:40%;
         position: absolute;
