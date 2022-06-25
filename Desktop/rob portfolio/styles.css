@@ -37,7 +37,6 @@ iframe {
 }
 .headercontainer1{
     flex:1;
-    padding: 0;
     margin: 0;
     color: #555; 
     float:left;
@@ -62,7 +61,6 @@ iframe {
 }
 .headercontainer2{
     flex:1;
-    padding: 0;
     margin: 0;
     padding-left: 20px;
     color: #555; 
@@ -106,13 +104,32 @@ iframe {
 
 
 /* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
+@media (max-width: 420px) {
+    .filmscontainer{
+        display:inline-block;
+    }
     
+    
+    .headercontainer1{
+        width:100%;
+        margin: 0;
+        color: #555;
+        padding: 0; 
+        float: left;
+        padding: 0;
+        
+    }
+    .headercontainer2{
+        display:block;
+        margin:0;
+        padding:0;
+    }
     .robbody{
-        width:40%;
+        width: 55%;
         position: absolute;
-        top: 30%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .navbar .navbar-brand, .navbar .nav-link {
         color: #555;

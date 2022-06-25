@@ -302,7 +302,7 @@ textarea.input {
   opacity: 0.2;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 420px) {
   .form {
     grid-template-columns: 1fr;
   }
